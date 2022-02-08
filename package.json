@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "inter-ui": "^3.19.3",
     "live-server": "^1.2.1"
   }
 }
