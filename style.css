@@ -1,0 +1,407 @@
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+	src: url('fonts/Inter-Thin.woff2?v=3.19') format('woff2'), url('fonts/Inter-Thin.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 100;
+	font-display: swap;
+	src: url('fonts/Inter-ThinItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-ThinItalic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+	src: url('fonts/Inter-ExtraLight.woff2?v=3.19') format('woff2'), url('fonts/Inter-ExtraLight.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 200;
+	font-display: swap;
+	src: url('fonts/Inter-ExtraLightItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-ExtraLightItalic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('fonts/Inter-Light.woff2?v=3.19') format('woff2'), url('fonts/Inter-Light.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src: url('fonts/Inter-LightItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-LightItalic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/Inter-Regular.woff2?v=3.19') format('woff2'), url('fonts/Inter-Regular.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/Inter-Italic.woff2?v=3.19') format('woff2'), url('fonts/Inter-Italic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('fonts/Inter-Medium.woff2?v=3.19') format('woff2'), url('fonts/Inter-Medium.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url('fonts/Inter-MediumItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-MediumItalic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('fonts/Inter-SemiBold.woff2?v=3.19') format('woff2'), url('fonts/Inter-SemiBold.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url('fonts/Inter-SemiBoldItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-SemiBoldItalic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('fonts/Inter-Bold.woff2?v=3.19') format('woff2'), url('fonts/Inter-Bold.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url('fonts/Inter-BoldItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-BoldItalic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url('fonts/Inter-ExtraBold.woff2?v=3.19') format('woff2'), url('fonts/Inter-ExtraBold.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 800;
+	font-display: swap;
+	src: url('fonts/Inter-ExtraBoldItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-ExtraBoldItalic.woff?v=3.19') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url('fonts/Inter-Black.woff2?v=3.19') format('woff2'), url('fonts/Inter-Black.woff?v=3.19') format('woff');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 900;
+	font-display: swap;
+	src: url('fonts/Inter-BlackItalic.woff2?v=3.19') format('woff2'), url('fonts/Inter-BlackItalic.woff?v=3.19') format('woff');
+}
+
+:root {
+	--color-primary: #e1e7e7;
+	--color-secondary: #c8d4d8;
+	--color-tertiary: #edefef;
+	--color-primary-darker: #394c58;
+	--color-secondary-darker: #8aa1ae;
+	--gradient-primary: linear-gradient(to top left, #8aa1ae, #394c58);
+	--gradient-secondary: linear-gradient(to top left, #c8d4d8, #8aa1ae);
+
+	--default-font-size: 1.6rem;
+	--h1-font-size: 18rem;
+	--h2-font-size: 10rem;
+	--h3-font-size: 7rem;
+	--h4-font-size: 4rem;
+	--h5-font-size: 2.5rem;
+	--small-font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: Inter, 'PT Sans', Calibri, Tahoma, sans-serif;
+	font-weight: 600;
+	font-size: var(--default-font-size);
+	line-height: 1.5;
+
+	background-color: var(--color-primary-darker);
+	color: rgba(0, 0, 0, 0.75);
+
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.quote__container {
+	width: auto;
+	max-width: 900px;
+	padding: 20px 30px;
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255, 0.4);
+	box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+	font-size: var(--h5-font-size);
+}
+
+.long-quote {
+	font: var(--default-font-size);
+}
+
+.fa-quote-left {
+	font-size: var(--h4-font-size);
+}
+
+.quote-author {
+	margin-top: 1.5rem;
+	font-size: var(--h5-font-size);
+	font-weight: 400;
+	font-style: italic;
+}
+
+.button__container {
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	cursor: pointer;
+	font-size: var(--h5-font-size);
+	border: none;
+	border-radius: 1rem;
+	background-color: var(--color-secondary);
+	outline: none;
+	padding: 5px 1.8rem;
+	box-shadow: 0 3px rgb(121, 121, 121, 0.65);
+}
+
+button:hover {
+	filter: brightness(110%);
+}
+
+button:active {
+	transform: translate(0, 3px);
+	box-shadow: 0 1px rgba(255, 255, 255, 0.65);
+}
+
+.facebook-button:hover {
+	color: #4267b2;
+}
+
+.fa-facebook {
+	font-size: 3rem;
+}
+
+/* .loader {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} */
+
+.loader__container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+
+.dash {
+	margin: 0 15px;
+	width: 35px;
+	height: 15px;
+	border-radius: 8px;
+	background: var(--color-tertiary);
+	box-shadow: 0 0 10px 0 var(--color-secondary);
+}
+
+.one {
+	margin-right: -18px;
+	transform-origin: center left;
+	animation: spin 3s linear infinite;
+}
+
+.two {
+	transform-origin: center right;
+	animation: spin2 3s linear infinite;
+	animation-delay: 0.2s;
+}
+
+.three {
+	transform-origin: center right;
+	animation: spin3 3s linear infinite;
+	animation-delay: 0.3s;
+}
+
+.four {
+	transform-origin: center right;
+	animation: spin4 3s linear infinite;
+	animation-delay: 0.4s;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(360deg);
+	}
+	30% {
+		transform: rotate(370deg);
+	}
+	35% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(0deg);
+	}
+	30% {
+		transform: rotate(-180deg);
+	}
+	35% {
+		transform: rotate(-190deg);
+	}
+	40% {
+		transform: rotate(-180deg);
+	}
+	78% {
+		transform: rotate(-180deg);
+	}
+	95% {
+		transform: rotate(-360deg);
+	}
+	98% {
+		transform: rotate(-370deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes spin3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	27% {
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(180deg);
+	}
+	45% {
+		transform: rotate(190deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	62% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(360deg);
+	}
+	80% {
+		transform: rotate(370deg);
+	}
+	85% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin4 {
+	0% {
+		transform: rotate(0deg);
+	}
+	38% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(-360deg);
+	}
+	65% {
+		transform: rotate(-370deg);
+	}
+	75% {
+		transform: rotate(-360deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
