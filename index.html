@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<base href="https://lvlad27.github.io/Quote-Generator/" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" href="style.css" />
 		<script src="https://kit.fontawesome.com/8a72fccfec.js" crossorigin="anonymous"></script>
-		<meta property="og:title" content="Lvlad - Quote Generator" />
-		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://lvlad27.github.io/Quote-Generator/" />
-		<meta property="og:image" content="/assets/img.jpg" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Lvlad - Quote Generator" />
+		<meta property="og:description" content="Get your quote of the day!" />
+		<meta property="og:image" content="/docs/img.jpg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Quote Generator</title>
 	</head>
 	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script
+			async
+			defer
+			crossorigin="anonymous"
+			src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=2609021856017248&autoLogAppEvents=1"
+			nonce="hsUcRbyz"
+		></script>
 		<div class="quote__container" id="quote__container">
 			<!-- Quote -->
 			<div class="quote-text">
@@ -27,9 +38,15 @@
 
 			<!-- Buttons -->
 			<div class="button__container">
-				<a class="facebook-button" id="facebook" title="Share this!" href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
-					<i class="fab fa-facebook"></i
-				></a>
+				<!-- Your share button code -->
+				<div class="fb-share-button" data-href="https://lvlad27.github.io/Quote-Generator/" data-layout="button" data-size="large">
+					<a
+						target="_blank"
+						href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+						class="fb-xfbml-parse-ignore"
+						>Share</a
+					>
+				</div>
 				<button id="new-quote">New Quote</button>
 			</div>
 		</div>
