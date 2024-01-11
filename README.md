@@ -2,6 +2,7 @@
 ## Overview
 
 The Quote Generator is a web application that displays random inspirational quotes. It features a simple and elegant interface with the functionality to generate a new quote and share it on Facebook. It was done as part of the freecodecamp curriculum.
+
 View it here: https://lvlad27.github.io/Quote-Generator/
 
 ## Features
